@@ -138,9 +138,6 @@ body {
   height: 21px;
 }
 
-.block_style-help img {
-  width: 100%;
-}
 .block_style-help span {
   font-family: var(--font-robotoCondensed);
   margin-top: 5px;
