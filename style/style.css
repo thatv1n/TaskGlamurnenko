@@ -149,8 +149,9 @@ body {
 
 .block_howtodo {
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .block_howtodo p {
@@ -163,6 +164,61 @@ body {
   width: 75%;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+table.iksweb {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  height: auto;
+  background-color: #fff000;
+}
+table.iksweb,
+table.iksweb td,
+table.iksweb th {
+  border: 1px solid #fdc300;
+}
+table.iksweb td,
+table.iksweb th {
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+}
+table.iksweb th {
+  background: #347c99;
+  color: #fff;
+  font-weight: normal;
+}
+
+.first-col {
+  width: 40% !important;
+  text-align: left !important;
+  padding-left: 20px;
+  font-family: var(--font-ptsans);
+  font-weight: bold;
+}
+
+.body-table {
+  text-align: center !important;
+  padding-left: 20px;
+  font-family: var(--font-ptsans);
+  font-weight: bold;
+}
+
+.table-currency div {
+  border: 1px solid black;
+  padding: 3px;
+  width: 25px;
+  margin: 0 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.title_table {
+  background-color: #ffd100;
+  font-weight: bold;
+  font-family: var(--font-ptsans);
+  font-size: 20px;
 }
 
 .write_now-title {
@@ -183,7 +239,7 @@ body {
 }
 
 .card-desc button {
-  background: #ff0b3b;
+  background: #000000;
   color: #fff;
   text-transform: uppercase;
   font-family: var(--font-ptsans);
@@ -191,6 +247,65 @@ body {
   width: 80%;
   height: 40px;
   margin: 15px 5px;
+  border: none;
+}
+
+.block_packet {
+  margin: 0 40px;
+  width: 250px;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid #bfbfbf;
+  padding-top: 34px;
+  height: 340px;
+  margin-bottom: 30px;
+}
+
+.block_packet-title {
+  font-family: var(--font-ptsans);
+  font-weight: bold;
+  text-align: center;
+  font-size: 19px;
+  width: 52%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.block_packet-body {
+  font-family: var(--font-ptsans);
+  font-size: 16px;
+  width: 188px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.block_packet-body div {
+  font-weight: bold;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.full-price {
+  position: relative;
+  font-family: var(--font-ptsans);
+  font-size: 17px;
+  color: #b8b6b5;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.full-price::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  background: red;
+  height: 2px;
+  transform: rotate(-7deg);
+  left: 7px;
+  bottom: 7px;
+}
+
+.sell-price {
+  font-family: var(--font-ptsans);
+  font-size: 22px;
+  font-weight: bold;
 }
 
 @media (max-width: 992px) {
@@ -217,5 +332,14 @@ body {
     left: -38px;
     top: 11px;
     width: 125px;
+  }
+  .first-col,.title_table,.body-table {
+    font-size: 13px;
+  }
+  .first-col{
+    padding-left: 10px;
+  }
+  .card-desc button{
+    font-size: 13px;
   }
 }
