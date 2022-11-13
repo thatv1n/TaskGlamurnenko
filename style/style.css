@@ -171,7 +171,7 @@ table.iksweb {
   border-collapse: collapse;
   border-spacing: 0;
   height: auto;
-  background-color: #fff000;
+  background: #fff000;
 }
 table.iksweb,
 table.iksweb td,
@@ -189,7 +189,9 @@ table.iksweb th {
   color: #fff;
   font-weight: normal;
 }
-
+.title_table td {
+  width: 200px !important;
+}
 .first-col {
   width: 40% !important;
   text-align: left !important;
@@ -215,7 +217,7 @@ table.iksweb th {
 }
 
 .title_table {
-  background-color: #ffd100;
+  background: #ffd100;
   font-weight: bold;
   font-family: var(--font-ptsans);
   font-size: 20px;
@@ -321,6 +323,9 @@ table.iksweb th {
 }
 
 @media (max-width: 506px) {
+  .block_howtodo {
+    width: 95%;
+  }
   .write_now-blocks {
     flex-direction: column;
   }
@@ -333,13 +338,19 @@ table.iksweb th {
     top: 11px;
     width: 125px;
   }
-  .first-col,.title_table,.body-table {
+  .first-col,
+  .title_table,
+  .body-table {
     font-size: 13px;
   }
-  .first-col{
+  .first-col {
     padding-left: 10px;
   }
-  .card-desc button{
-    font-size: 13px;
+  .card-desc button {
+    font-size: 10px;
+    width: auto;
+  }
+  .title_table td {
+    width: 100px !important;
   }
 }
