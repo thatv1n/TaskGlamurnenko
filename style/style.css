@@ -171,12 +171,12 @@ table.iksweb {
   border-collapse: collapse;
   border-spacing: 0;
   height: auto;
-  background: #fff000;
+  background: #fff000 !important;
 }
 table.iksweb,
 table.iksweb td,
 table.iksweb th {
-  border: 1px solid #fdc300;
+  border: 1px solid #fdc300 !important;
 }
 table.iksweb td,
 table.iksweb th {
@@ -185,7 +185,6 @@ table.iksweb th {
   text-align: center;
 }
 table.iksweb th {
-  background: #347c99;
   color: #fff;
   font-weight: normal;
 }
@@ -208,7 +207,7 @@ table.iksweb th {
 }
 
 .table-currency div {
-  border: 1px solid black;
+  border: 1px solid black !important;
   padding: 3px;
   width: 25px;
   margin: 0 5px;
@@ -217,7 +216,7 @@ table.iksweb th {
 }
 
 .title_table {
-  background: #ffd100;
+  background: #ffd100 !important;
   font-weight: bold;
   font-family: var(--font-ptsans);
   font-size: 20px;
@@ -352,5 +351,8 @@ table.iksweb th {
   }
   .title_table td {
     width: 100px !important;
+  }
+  .body-table {
+    padding-left: 5px;
   }
 }
