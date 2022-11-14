@@ -257,7 +257,7 @@ table.iksweb th {
   border: none;
 }
 
-.card-desc button {
+.block_packet button {
   background: #000000;
   color: #fff;
   text-transform: uppercase;
@@ -265,7 +265,7 @@ table.iksweb th {
   font-size: 14px;
   width: 80%;
   height: 40px;
-  margin: 15px 5px;
+  margin: 15px 23px 5px 23px;
   border: none;
   background: #fe0a39;
 }
@@ -386,7 +386,7 @@ table.iksweb th {
   .block_howtodo {
     width: 90%;
   }
-  .card-desc button,
+  .block_packet button,
   .write_now button {
     font-size: 10px;
     width: auto;
@@ -417,7 +417,7 @@ table.iksweb th {
   .first-col {
     padding-left: 10px;
   }
-  .card-desc button,
+  .block_packet button,
   .write_now button {
     font-size: 10px;
     width: auto;
