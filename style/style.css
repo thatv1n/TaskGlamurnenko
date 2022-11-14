@@ -212,6 +212,7 @@ table.iksweb th {
   padding-left: 20px;
   font-family: var(--font-ptsans);
   font-weight: bold;
+  font-size: 14px;
 }
 
 .table-currency div {
