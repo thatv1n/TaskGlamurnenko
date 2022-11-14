@@ -386,7 +386,7 @@ table.iksweb th {
   .block_howtodo {
     width: 90%;
   }
-  .block_packet button,
+
   .write_now button {
     font-size: 10px;
     width: auto;
@@ -417,7 +417,6 @@ table.iksweb th {
   .first-col {
     padding-left: 10px;
   }
-  .block_packet button,
   .write_now button {
     font-size: 10px;
     width: auto;
