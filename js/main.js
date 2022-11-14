@@ -29,7 +29,7 @@ $(document).ready(function () {
           top: '0',
           width: '100%',
           left: '0',
-          padding: '5px 40px',
+          padding: '5px 10px',
         });
       } else {
         $('header').css({
