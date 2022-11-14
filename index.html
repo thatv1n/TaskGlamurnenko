@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,15 +10,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=PT+Sans&family=Roboto+Condensed:wght@300&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
   <title>Task Glamurenko</title>
   <link rel="stylesheet" href="./style/reset.css" />
   <link rel="stylesheet" href="./style/style.css" />
 </head>
 
 <body>
-  <div class="container options ">
+  <div class="container p-0 position-relative">
     <header class="header d-flex justify-content-between flex-wrap">
       <div class="mb-1">
         <ul class="menu d-flex flex-wrap">
@@ -49,8 +51,11 @@
         </div>
       </div>
     </header>
+  </div>
+  <div class="container options ">
+
     <div class="content">
-      <div class=" inner_content d-flex align-items-center">
+      <div class=" inner_content d-flex align-items-center" id="back-top">
         <div class="title_block">
           <img src="./img/logo-new.png" alt="logo">
           <div class="title_block-text">Наша миссия:</div>
@@ -67,7 +72,7 @@
           Онлайн-консультация стилиста в вашем мобильном телефоне когда вам нужно: на шоппинге, во время разбора
           гардероба, когда подбираете комплект, просто когда нужен совет
         </div>
-        <img class="img-fluid" src="./img/form-reservation-bigcolor.jpg" alt="form-reservation-bigcolor">
+        <img class="w-100" src="./img/form-reservation-bigcolor.jpg" alt="form-reservation-bigcolor">
         <span>Описание картинки</span>
       </div>
 
@@ -186,7 +191,6 @@
             <div class="block_packet-body">Вопросов/комплектов на оценку:
               <div>5 ваших луков или 5
                 вопросов</div>
-
             </div>
             <div class="text-center">
               <div class="full-price">890₽ </div>
@@ -202,7 +206,7 @@
             <div class="block_packet-body">Срок:
               <div>в пределах 24 часов</div>
             </div>
-            <div class="block_packet-body">Вопросов/комплектов на оценку:
+            <div class="block_packet-body" style="margin-bottom: 32px;">Вопросов/комплектов на оценку:
               <div>до 100</div>
             </div>
             <div class="text-center">
@@ -219,7 +223,7 @@
             <div class="block_packet-body">Срок:
               <div>в течение месяца</div>
             </div>
-            <div class="block_packet-body">Вопросов/комплектов на оценку:
+            <div class="block_packet-body" style="margin-bottom: 32px;">Вопросов/комплектов на оценку:
               <div>неограниченно</div>
             </div>
             <div class="text-center">
@@ -231,19 +235,75 @@
             </div>
           </div>
         </div>
-        <footer class="footer">Footer</footer>
       </div>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-      <script src="./js/main.js"></script>
+      <div>
+        <div class=" block_howtodo  d-flex  justify-content-center flex-column ">
+          <div class="block_style-title">
+            Как все происходит
+          </div>
+          <div class="response_client d-flex align-items-center">
+            <a href="./img/first-class-stylish-help-chat-1.jpg" data-fancybox="gallery"
+              data-caption="Клиента просит стилиста помочь выбрать одну из курток милитари">
+              <img src="./img/first-class-stylish-help-chat-1.jpg" alt="">
+            </a>
+
+            <div>Клиента просит стилиста помочь выбрать одну из курток милитари</div>
+          </div>
+          <div class="response_client d-flex align-items-center">
+            <a href="./img/first-class-stylish-help-chat-2.jpg" data-fancybox="gallery"
+              data-caption="Стилист запрашивает дополнительные фотографии для того, чтобы выбор был 100% удачным">
+              <img src="./img/first-class-stylish-help-chat-2.jpg" alt="">
+            </a>
+            <div>Стилист запрашивает дополнительные фотографии для того, чтобы выбор был 100% удачным</div>
+          </div>
+          <div class="response_client d-flex align-items-center">
+            <a href="./img/first-class-stylish-help-chat-3.jpg" data-fancybox="gallery"
+              data-caption="Стилист анализирует вещи с учетом уже имеющихся вещей клиентки и помогает сделать правильный выбор">
+              <img src="./img/first-class-stylish-help-chat-3.jpg" alt="">
+            </a>
+            <div>Стилист анализирует вещи с учетом уже имеющихся вещей клиентки и помогает сделать правильный выбор
+            </div>
+          </div>
+          <div class="response_client d-flex align-items-center ">
+            <a href="./img/first-class-stylish-help-chat-4.jpg" data-fancybox="gallery"
+              data-caption="Благородная клиентка делится впечатлениями от полученной услуги и радостью удачных покупок">
+              <img src="./img/first-class-stylish-help-chat-4.jpg" alt="">
+            </a>
+            <div>Благородная клиентка делится впечатлениями от полученной услуги и радостью удачных покупок</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container p-0">
+    <footer class="footer d-flex  flex-column align-items-center">
+      <div><button id="click-top">Наверх <span>˄</span> </button></div>
+      <div class="footer_nav ">
+        <ul class="list-unstyled">
+          <li>Вакансии</li>
+          <li>Карта сайта</li>
+          <li>Политика приватности</li>
+          <li>Перепечатка разрешена только с активной ссылкой на нас</li>
+          <li>Glamurenko.ru,2005-2019 Тел.: <a href="tel:+78007070513">8(800)707-05-13</a>;<a
+              href="tel:+74993502335">+7(499)350-23-35</a></li>
+          <li>
+            Email: support@glamurenko.ru
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

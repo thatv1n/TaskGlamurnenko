@@ -2,6 +2,7 @@
   --font-oranienbaum: 'Oranienbaum', serif;
   --font-ptsans: 'PT Sans', sans-serif;
   --font-robotoCondensed: 'Roboto Condensed', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
 }
 
 body {
@@ -20,12 +21,18 @@ body {
   top: 20px;
   position: absolute;
   font-family: 'Roboto', sans-serif;
+  z-index: 10;
   width: 100%;
+  transition: position 0.8s ease;
   font-family: var(--font-oranienbaum);
 }
 
 .menu {
   margin-top: 10px;
+}
+
+.menu li {
+  margin-bottom: 10px;
 }
 
 .menu li a {
@@ -304,6 +311,54 @@ table.iksweb th {
   font-family: var(--font-ptsans);
   font-size: 22px;
   font-weight: bold;
+}
+
+.response_client {
+  margin-bottom: 40px;
+}
+
+.response_client div {
+  font-family: var(--font-roboto);
+  font-size: 22px;
+  max-width: 330px;
+}
+
+.response_client a img {
+  width: 150px;
+  margin-right: 30px;
+}
+
+.footer button {
+  border: 1px solid #fff;
+  background: #000000;
+  color: #fff;
+  font-family: var(--font-roboto);
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.footer button span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footer_nav {
+  width: 100%;
+  color: #fff;
+  font-family: var(--font-roboto);
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.footer_nav li {
+  margin-bottom: 10px;
+}
+
+.footer_nav a {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
